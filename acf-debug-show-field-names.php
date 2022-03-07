@@ -25,7 +25,6 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'PLUGIN_NAME_VERSION', '1.0.1' );
 
 add_filter('acf/load_field', function($field) {
-    global $post;
     if (empty($field['name'])) {
         return $field;
     }
