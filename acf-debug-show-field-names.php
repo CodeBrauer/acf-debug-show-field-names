@@ -9,7 +9,7 @@
  * Plugin Name:       ACF Debug: Show field names
  * Plugin URI:        http://github.com/codebrauer/acf-debug-show-field-names/
  * Description:       Shows the original ACF field name / meta_key of the value in your posts.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            CodeBrauer
  * Author URI:        http://codebrauer.com/
  * License:           GPL-2.0+
@@ -21,8 +21,6 @@
 if ( ! defined( 'WPINC' ) ) {
     die;
 }
-
-define( 'PLUGIN_NAME_VERSION', '1.0.3' );
 
 add_filter('acf/load_field', function($field) {
     if (empty($field['name']) || !is_admin()) {
